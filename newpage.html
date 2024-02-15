@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Car</title>
+</head>
+<body>
+    <div id='main'>
+        <div id='main1'>
+          <h1 id='main1-h1'><span>Looking </span>to rent a car</h1>
+          <p id='main1-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid eos laborum repudiandae sit consequatur beatae quo porro maiores adipisci? Dolore, veritatis! Aut nobis magnam quia autem cupiditate iure esse!</p>
+        </div>
+        <div id='main2'>
+          <img src="./mahindra-thar-front-view2.webp" alt='logo' id='main2IMG'></img>
+        </div>
+        <div id="fixed-div">
+          <div id='pickuplocation' class='PickupData'>
+            <p id='picuplocation-p' class='pickupData-p'>Pickup Location</p>
+            <input type="text" placeholder='Pickup location' id='Inputdata'></input>
+          </div>
+          <div id='pickupDateTime' class='PickupData'>
+            <p id='pickupDateTime-p' class='pickupData-p'>Pickup Date and Time</p>
+            <input type="datetime-local" placeholder='Pickup Date and Time' id='Inputdata'></input>
+          </div>
+          <div id='dropOffDateTime' class='PickupData'>
+            <p id='DropOffDateTime' class='pickupData-p'>Drop Off Date and Time</p>
+            <input type="datetime-local" placeholder="Drop off Date and Time" id='Inputdata'></input>
+          </div>
+          <div id='select-div' class='PickupData'>
+            <p id='Selectcar' class='pickupData-p'>Select Your Car</p>
+            <select>
+              <option value="Select your car">Select Your Car</option>
+              <option value="Dzire">Dzire</option>
+              <option value="Alto">Alto</option>
+              <option value="Eartiga">Eartiga</option>
+              <option value="Swift">Swift</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+#main{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#main1{
+    width: 50%;
+    height: 100%;
+}
+span{
+    color: orange;
+}
+#main1-h1{
+    font-size: 80px;
+    text-align: left;
+    margin: 10px 180px 30px 20px;
+    font-family: 'Protest Revolution', sans-serif;
+    padding-left: 40px;
+}
+#main1-p{
+    /* font-family: 'Protest Revolution', sans-serif; */
+    font-family: 'Protest Revolution', sans-serif;
+    text-align: left;
+    margin-right: 250px;
+    margin-left:50px;
+    color: blue;
+    font-size: 20px;
+}
+#main2{
+    width: 50%;
+    height: 100%;
+    /* background-color: orange; */
+    border-radius: 30px;
+    margin: 10px 10px 0px 0px ;
+    
+}
+#main2IMG{
+    height:600px;
+    width:100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 0px 100px 0px orange;
+
+}
+#fixed-div{
+    position: fixed;
+    width: 60%;
+    top: 80%;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color:white;
+    border-radius: 10px;
+    border: 2px outset red;
+}
+#fixed-div:hover{
+/* border: 2px outset blue; */
+transform:translateY(-10px);
+box-shadow: 0px 0px 50px -5px aqua;
+
+}
+
+.PickupData{
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+#Inputdata{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 10px;  
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+#Inputdata:hover{
+    background-color: black;
+    color: white;
+    border: blue;
+}
+select{
+    padding: 5px 5px;
+}
+select:hover{
+    background-color: black;
+    color: white;
+}
+
+
+  </style>
+</body>
+</html>
